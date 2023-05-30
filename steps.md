@@ -17,15 +17,25 @@ Come abbiamo visto puoi usare varie tecniche (style , className, classList)
 <br>
 
 - Inizio del programma:
-- Inizializzare una variabile per rappresentare i numeri da 1 a 100.
+- Recupero l'elemento contenitore nel DOM
+- Creo l'elemento `<ul>`
+- Aggiungo l'elemento `<ul>` al container
+
 - Iterazione sui numeri:
-  - Utilizzare un ciclo per iterare da 1 a 100.
-  - Per ogni numero controlla:
+
+  - Utilizzo un ciclo per iterare da 1 a 100.
+  - Per ogni numero controllo:
+
     - **Se** è un multiplo di 3 e di 5.
-      - stampa "FizzBuzz".
+      - Assegno "FizzBuzz" a output.
     - **Se Invece**, è un multiplo di 3.
-      - stampa "Fizz".
+      - Assegno "Fizz" a output.
     - **Se Invece**, è un multiplo di 5.
-      - stampa "Buzz".
-    - **Altrimenti**, stampa il numero.
+      - Assegno "Buzz" a output.
+    - **Altrimenti**, assegn il numero corrente a output.
+
+- Creo un nuovo elemento `<li>`.
+- Imposto il contenuto di `<li>` come output.
+- Aggiungo l'elemento `<li>` come figlio dell'elemento `<ul>`.
+
 - Fine del programma.
