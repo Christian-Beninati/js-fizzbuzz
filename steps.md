@@ -36,6 +36,7 @@ Come abbiamo visto puoi usare varie tecniche (style , className, classList)
 
 - Creo un nuovo elemento `<li>`.
 - Imposto il contenuto di `<li>` come output.
+- Aggiungo le classi agli elementi `<li>` in base al valore.
 - Aggiungo l'elemento `<li>` come figlio dell'elemento `<ul>`.
 
 - Fine del programma.

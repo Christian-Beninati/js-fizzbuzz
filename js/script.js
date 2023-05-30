@@ -5,7 +5,7 @@ const container = document.getElementById("fizzbuzz-container");
 
 // Creo <ul> 
 const list = document.createElement("ul");
-list.classList.add('list-unstyled')
+// list.classList.add('list-unstyled')
 
 // Aggiungo <ul> al container
 container.appendChild(list);
@@ -13,7 +13,7 @@ container.appendChild(list);
 //   Genero gli elementi
 for (let i = 1; i <= 100; i++) {
 
-  // Assegno il numero  numero corrente a output
+  // Assegno numero corrente a output
   let output = i;
   
   // Se il numero è multiplo di 3 e 5, assegno "FizzBuzz" a output
@@ -31,6 +31,18 @@ for (let i = 1; i <= 100; i++) {
   const listItem = document.createElement("li");
   // Imposto il contenuto di <li> come output   
   listItem.append(output);
+
+  // Aggiungo le classe agli all'elementi <li> in base al valore
+  if (output === "FizzBuzz") {
+    listItem.classList.add("fizzbuzz");
+  } else if (output === "Fizz") {
+    listItem.classList.add("fizz");
+  } else if (output === "Buzz") {
+    listItem.classList.add("buzz");
+  } else {
+    listItem.classList.add("number");
+  }
+
   // Aggiungo l'elemento <li> come figlio dell'elemento <ul>
   list.appendChild(listItem);
 }
